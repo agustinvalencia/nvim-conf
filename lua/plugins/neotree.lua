@@ -165,4 +165,7 @@ return {
       statusline = false,
     },
   },
+  keys = {
+    { "<leader>e", "<cmd>Neotree focus<cr>", desc = "Neotree Focus" },
+  },
 }

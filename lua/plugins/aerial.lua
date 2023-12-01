@@ -8,9 +8,18 @@ return {
       min_width = 10,
     },
     attach_mode = "global",
+    filter_kind = {
+      "Class",
+      "Function",
+      "Method",
+      "Field",
+      "Enum",
+      "Constant",
+    },
   },
   keys = {
     { "<leader>cs", "<cmd>AerialOpen<cr>", desc = "Focus Symbols" },
+    { "<leader>cS", "<cmd>Telescope aerial<cr>", desc = "Telescope Symbols" },
   },
   ft = { "python", "yaml", "lua" },
   -- Optional dependencies
