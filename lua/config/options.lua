@@ -5,3 +5,5 @@ local opt = vim.opt
 
 opt.relativenumber = false -- no relative line numbers
 opt.scrolloff = 10 -- 10 lines of context
+opt.textwidth = 80 -- auto breaklines at 80
+opt.formatoption = "t"

@@ -5,7 +5,7 @@ return {
     layout = {
       max_width = { 0.3 },
       width = nil,
-      min_width = 10,
+      min_width = { 0.2 },
     },
     attach_mode = "global",
     filter_kind = {
@@ -21,7 +21,7 @@ return {
     { "<leader>cs", "<cmd>AerialOpen<cr>", desc = "Focus Symbols" },
     { "<leader>cS", "<cmd>Telescope aerial<cr>", desc = "Telescope Symbols" },
   },
-  ft = { "python", "yaml", "lua" },
+  ft = { "python", "yaml", "lua", "markdown" },
   -- Optional dependencies
   dependencies = {
     "nvim-treesitter/nvim-treesitter",

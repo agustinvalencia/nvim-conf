@@ -1,3 +1,4 @@
+return { "ggandor/leap.nvim" }
 -- return { "ggandor/leap.nvim", enabled = false }
 
 -- TODO: Fix this one to not use s or function s
