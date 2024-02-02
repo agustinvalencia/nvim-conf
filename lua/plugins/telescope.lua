@@ -2,6 +2,7 @@ return {
   -- change some telescope options and a keymap to browse plugin files
   {
     "nvim-telescope/telescope.nvim",
+
     keys = {
       -- add a keymap to browse plugin files
       -- stylua: ignore
@@ -32,9 +33,19 @@ return {
     -- change some options
     opts = {
       defaults = {
+        initial_mode = "normal",
         layout_strategy = "horizontal",
         layout_config = { prompt_position = "top" },
         sorting_strategy = "ascending",
+        mappings = {
+          i = {
+            ["<esc>"] = require("telescope.actions").close,
+            ["<M-p>"] = require("telescope.actions.layout").toggle_preview,
+          },
+          n = {
+            ["<M-p>"] = require("telescope.actions.layout").toggle_preview,
+          },
+        },
         winblend = 0,
       },
     },

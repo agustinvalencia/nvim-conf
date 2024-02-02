@@ -1,4 +1,5 @@
 return {
+  enabled = false,
   "folke/flash.nvim",
   event = "VeryLazy",
   opts = {

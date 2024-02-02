@@ -6,4 +6,11 @@ local opt = vim.opt
 opt.relativenumber = false -- no relative line numbers
 opt.scrolloff = 10 -- 10 lines of context
 opt.textwidth = 80 -- auto breaklines at 80
-opt.formatoption = "t"
+opt.fo = "t"
+
+-- folding
+-- opt.foldcolumn = "1"
+-- opt.foldlevel = 99
+-- opt.foldlevelstart = -1
+-- opt.foldmethod = "expr"
+-- opt.foldexpr = "nvim_treesitter#foldexpr()"

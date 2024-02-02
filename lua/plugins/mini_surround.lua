@@ -1,5 +1,9 @@
 return {
   "echasnovski/mini.surround",
+  dependencies = {
+    "ggandor/flit.nvim",
+    "folke/flash.nvim",
+  },
   opts = {
     -- Add custom surroundings to be used on top of builtin ones. For more
     -- information with examples, see `:h MiniSurround.config`.
